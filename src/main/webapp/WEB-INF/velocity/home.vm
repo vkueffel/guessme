@@ -1,0 +1,10 @@
+<html>
+
+<body>
+Greetings.
+<br>
+Would you like to <a href="#springUrl("/start")">play</a> a number guessing game?
+
+<body>
+
+</html>

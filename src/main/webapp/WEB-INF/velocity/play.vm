@@ -1,0 +1,31 @@
+<html>
+
+<body>
+I picked a number between ${minNumber} and ${maxNumber}. You can try ${maxAttempts} times to guess it...
+<br><br>
+
+
+
+#if (${game.attempt} > 1)
+Sorry, wrong.<br><br>
+#end
+${game.attempt}. attempt:<br>
+<form method="POST" action="#springUrl("/play")">
+<input name="id" type="hidden" value="${game.id}">
+<input name="move" type="text" value="">&nbsp;&nbsp;
+
+#if (${error})
+<font color="#FF0000">${error}</font>
+<br><br>
+#end
+
+<input type="submit" value="submit"/>
+</form>
+
+
+<br>
+<a href="#springUrl("/start")">Start</a> a new game?
+
+<body>
+
+</html>

@@ -1,0 +1,17 @@
+<html>
+
+<body>
+
+The correct answer was ${correctNumber}.
+<br>
+#if (${won})
+You got it in ${attempts}.
+#else
+Sorry.
+#end
+<br>
+<a href="#springUrl("/start")">Start</a> a new game?
+
+<body>
+
+</html>
